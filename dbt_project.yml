@@ -19,15 +19,4 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-seeds:
-  dbt_ecommerce:
-    +schema: raw
 
-models:
-  dbt_ecommerce:
-    staging:
-      +materialized: view
-      +schema: staging
-    marts:
-      +materialized: table
-      +schema: marts
